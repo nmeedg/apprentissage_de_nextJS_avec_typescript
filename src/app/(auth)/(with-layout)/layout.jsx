@@ -1,11 +1,7 @@
 export default function AuthLayout({children}) {
   return (
     <div>
-      <h1 style={{
-        color:"blue",
-        textDecoration:"underline",
-        textAlign:"center"
-      }}>Auth Layout</h1>
+      <h1 className=" font-bold text-xl uppercase">Authentification</h1>
       {children}
     </div>
   );

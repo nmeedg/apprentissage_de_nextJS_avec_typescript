@@ -18,11 +18,11 @@ export default function AllAuthLayout({
   return (
     <div>
       <nav>
-        <ul>
+        <ul className=" flex justify-between mx-3 my-2 p-2">
           {navLinks.map((link, index) => {
             return (
               <li key={index}>
-                <Link href={link.href} style={pathname.startsWith(link.href) ? {color:"greenyellow",fontWeight:"bold"}:{}}>{link.name}</Link>
+                <Link href={link.href} className={pathname.startsWith(link.href) ? " text-green-600 font-bold underline text-lg":" text-blue-400"}>{link.name}</Link>
               </li>
             );
           })}
