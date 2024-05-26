@@ -9,7 +9,7 @@ export default function Order() {
     const router=useRouter()
     const handleClick= () => {
         console.log("Placing your order");
-        router.push("/")
+        router.push("/login")
     }
   return (
     <div className="my-5 mx-3">
