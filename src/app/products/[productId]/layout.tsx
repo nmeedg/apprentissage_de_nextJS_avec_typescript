@@ -3,11 +3,8 @@ export default function ProductDetailsLayout({children}:{
 }) {
   return (
     <div>
-        <h1 style={{
-            textDecoration:"underline",
-            textAlign: "center"
-        }}>Product Details</h1>
         {children}
+        <h1 className=" font-bold text-green-600">Product Features</h1>
     </div>
   )
 }
